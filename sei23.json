@@ -1,0 +1,20 @@
+{ "template": "./template.json",
+  "startDate": "2019-07-22T09:00:00.0Z",
+  "endDate":   "2019-10-16T17:00:00.0Z",
+  "overlays": [ 
+    { "type": "duration", "name": "project-1-presentations", "duration": "05:00" },
+    { "type": "duration", "name": "project-2", "duration": "31:00" },
+    { "type": "remove", "name": "js-codeChallenges-exercise" }
+  ],
+  "plannedEvents": [
+    { "period": "weekly", "name": "outcomes",  "duration": "01:30", "start": "wednesday:14:00" },
+    { "period": "daily",  "name": "lunch",     "duration": "01:30", "start": "12:30" },
+    { "period": "once",   "name": "holiday",   "duration": "24:00", "start": "2019-09-02" },
+    { "period": "weekly", "name": "study-day", "duration": "08:00", "start": "wednesday:09:00",
+      "skipTimes": [
+        "2019-08-14T09:00",
+        "2019-08-28T09:00"
+      ]
+    }
+  ]
+}
