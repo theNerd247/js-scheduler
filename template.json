@@ -80,7 +80,7 @@
     "duration": "0:15"
   },
   {
-    "name": "js-codeChallenges-exercise",
+    "name": "homework-review",
     "duration": "1:0"
   },
   {
@@ -94,6 +94,10 @@
   {
     "name": "js-datastructure-exercise",
     "duration": "0:15"
+  },
+  {
+    "name": "js-higher-order-functions-lesson",
+    "duration": "1:0"
   },
   {
     "name": "js-domIntro-exercise",
@@ -111,9 +115,8 @@
     "name": "js-dom-exercise",
     "duration": "0:15"
   },
-  {
-    "name": "js-dom-exercise",
-    "duration": "1:0"
+  { "name": "homework-review",
+    "duration": "1:00"
   },
   {
     "name": "jquery-intro-lesson",
@@ -133,15 +136,7 @@
   },
   {
     "name": "js-diagnostic-exercise",
-    "duration": "2:30"
-  },
-  {
-    "name": "js-diagnostic-exercise",
-    "duration": "2:45"
-  },
-  {
-    "name": "js-diagnostic-exercise",
-    "duration": "0:15"
+    "duration": "5:30"
   },
   {
     "name": "project-1",
@@ -149,11 +144,7 @@
   },
   {
     "name": "project-1-presentations",
-    "duration": "6:30"
-  },
-  {
-    "name": "js-codeChallenges-exercise",
-    "duration": "1:0"
+    "duration": "3:30"
   },
   {
     "name": "http-intro-lesson",
@@ -181,7 +172,7 @@
   },
   {
     "name": "rest-intro-lesson",
-    "duration": "1:00"
+    "duration": "2:00"
   },
   {
     "name": "mvc-intro-lesson",
@@ -208,76 +199,161 @@
     "duration": "0:15"
   },
   {
-    "name": "db-testData-lesson",
-    "duration": "1:0"
-  },
-  {
     "name": "express-codeAlong-lesson",
-    "duration": "5:15"
-  },
-  {
-    "name": "express-donut-shop-exercise",
-    "duration": "0:15"
+    "duration": "6:30"
   },
   {
     "name": "heroku-intro-lesson",
     "duration": "1:0"
   },
   {
+    "name":"agile-intro-lesson",
+    "duration": "1:0"
+  },
+  {
     "name": "mehn-diagnostic-exercise",
-    "duration": "5:30"
+    "duration": "4:30"
   },
   {
     "name": "project-2",
-    "duration": "32:30"
+    "duration": "31:30"
   },
   {
     "name": "project-2-presentations",
-    "duration": "6:30"
+    "duration": "3:30"
   },
   {
-    "name": "js-higher-order-functions-lesson",
-    "duration": "1:0"
+    "name": "sei-computer-science-intro-lesson",
+    "duration": "0:30"
   },
+  {
+    "name": "sei-algorithms-intro-lesson",
+    "duration": "0:30"
+  },
+  {
+    "name": "sei-bigonotation-lesson",
+    "duration": "0:30"
+  }, 
+  {
+    "name": "sei-bigonotation-exercise",
+    "duration": "1:30"
+  }, 
   {
     "name": "js-oop-lesson",
     "duration": "2:30"
   },
   {
     "name": " js-oop-exercise",
-    "duration": "2:45"
-  },
-  {
-    "name": "sei-bigonotation-lesson",
-    "duration": "0:15"
+    "duration": "3:00"
   },
   {
     "name": "sei-recursion-lesson",
-    "duration": "0:15"
+    "duration": "1:30"
   },
   {
-    "name": "sei-bigonotation-lesson",
-    "duration": "1:0"
-  },
-  {
-    "name": "sei-recursion-lesson",
-    "duration": "1:0"
-  },
-  {
-    "name": "sei-intro-to-sorting-lesson",
-    "duration": "0:15"
+    "name": "sei-sorting-intro-lesson",
+    "duration": "1:00"
   },
   {
     "name": "sei-basic-sorts-lesson",
-    "duration": "0:15"
+    "duration": "1:00"
   },
   {
-    "name": "sei-intro-to-sorting-lesson",
-    "duration": "1:0"
+    "name": "sei-recursion-exercise",
+    "duration": "1:00"
   },
   {
-    "name": "sei-basic-sorts-lesson",
-    "duration": "1:0"
+    "name": "sei-sorting-intro-exercise",
+    "duration": "1:00"
+  },
+  {
+    "name": "sei-basic-sorts-exercise",
+    "duration": "1:00"
+  },
+  {
+    "name": "sei-divide-conquer-sorting-algorithms-lesson",
+    "duration": "1:30"
+  },
+  {
+    "name": "sei-distribution-sort-lesson",
+    "duration": "1:00"
+  },
+  {
+    "name": "sei-searchalgorithms-lesson",
+    "duration": "1:00"
+  },
+  {
+    "name": "sei-divide-conquer-sorting-algorithms-exercise",
+    "duration": "1:00"
+  },
+  {
+    "name": "sei-distribution-sort-exercise",
+    "duration": "1:00"
+  },
+  {
+    "name": "sei-searchalgorithms-exercise",
+    "duration": "1:00"
+  },
+  {
+    "name": "sei-datastructures-intro-lesson",
+    "duration": "1:30"
+  },
+  {
+    "name": "sei-linkedlists-lesson",
+    "duration": "1:00"
+  },
+  {
+    "name": "sei-stacks-and-queues-lesson",
+    "duration": "1:00"
+  },
+  {
+    "name": "sei-linkedlists-exercise",
+    "duration": "1:30"
+  },
+  {
+    "name": "sei-stacks-and-queues-exercise",
+    "duration": "1:30"
+  },
+  {
+    "name": "sei-hashtables-lesson",
+    "duration": "1:00"
+  },
+  {
+    "name": "sei-sets-lesson",
+    "duration": "1:00"
+  },
+  {
+    "name": "sei-binary-trees-lesson",
+    "duration": "1:30"
+  },
+  {
+    "name": "sei-hashtables-exercise",
+    "duration": "1:00"
+  },
+  {
+    "name": "sei-sets-exercise",
+    "duration": "1:00"
+  },
+  {
+    "name": "sei-binary-trees-exercise",
+    "duration": "2:00"
+  }, 
+  {
+    "name": "sei-graphs-lesson",
+    "duration": "1:00"
+  },
+  {
+    "name": "sei-designpatterns-lesson",
+    "duration": "1:30"
+  },
+  
+  {
+    "name": "sei-graphs-exercise",
+    "duration": "1:30"
+  },
+  {
+    "name": "sei-designpatterns-exercise",
+    "duration": "1:30"
   },
   {
     "name": "react-intro-lesson",
@@ -285,7 +361,7 @@
   },
   {
     "name": "react-props-lesson",
-    "duration": "2:45"
+    "duration": "3:45"
   },
   {
     "name": "react-jsx-exercise",
@@ -301,47 +377,19 @@
   },
   {
     "name": "react-state-practice",
-    "duration": "2:45"
-  },
-  {
-    "name": "sei-linkedlists-lesson",
-    "duration": "0:15"
-  },
-  {
-    "name": "react-state-practice",
-    "duration": "0:15"
-  },
-  {
-    "name": "sei-linkedlists-lesson",
-    "duration": "1:0"
-  },
-  {
-    "name": "react-router-lesson",
-    "duration": "2:30"
-  },
-  {
-    "name": "react-router-exercise",
-    "duration": "2:45"
-  },
-  {
-    "name": "react-router-exercise",
-    "duration": "0:15"
-  },
-  {
-    "name": "js-functionDrills-exercise",
-    "duration": "1:0"
+    "duration": "3:00"
   },
   {
     "name": "ajax-intro-lesson",
-    "duration": "2:30"
+    "duration": "3:30"
   },
   {
     "name": "react-ajax-exercise",
-    "duration": "2:45"
+    "duration": "3:00"
   },
   {
-    "name": "react-ajax-exercise",
-    "duration": "0:15"
+    "name": "react-router-lesson",
+    "duration": "1:00"
   },
   {
     "name": "react-heroku-lesson",
@@ -349,43 +397,19 @@
   },
   {
     "name": "react-diagnostic-exercise",
-    "duration": "2:30"
-  },
-  {
-    "name": "react-diagnostic-exercise",
-    "duration": "2:45"
-  },
-  {
-    "name": "react-diagnostic-exercise",
-    "duration": "0:15"
-  },
-  {
-    "name": "agile-intro-practice",
-    "duration": "1:0"
-  },
-  {
-    "name": "sei-searchalgorithms-lesson",
-    "duration": "1:0"
-  },
-  {
-    "name": "sei-designpatterns-lesson",
-    "duration": "1:0"
+    "duration": "4:30"
   },
   {
     "name": "project-3",
-    "duration": "48:00"
+    "duration": "39:00"
   },
   {
     "name": "project-3-presentations",
     "duration": "6:30"
   },
   {
-    "name": "sei-stacks-and-queues",
-    "duration": "1:0"
-  },
-  {
     "name": "python-intro-lesson",
-    "duration": "2:30"
+    "duration": "3:30"
   },
   {
     "name": "python-intro-practice",
@@ -395,53 +419,28 @@
     "name": "python-intro-exercise",
     "duration": "0:15"
   },
-  {
-    "name": "sei-binary-trees-lesson",
-    "duration": "1:0"
-  },
-  {
-    "name": "sei-binary-trees-lesson",
-    "duration": "2:30"
-  },
-  {
-    "name": "sei-hashtables-lesson",
-    "duration": "0:15"
-  },
-  {
-    "name": "sei-hashtables-lesson",
-    "duration": "1:0"
+  { "name": "homework-review",
+    "duration": "1:00"
   },
   {
     "name": "python-oop-lesson",
-    "duration": "2:45"
+    "duration": "2:30"
   },
   {
     "name": "python-oop-exercise",
-    "duration": "0:15"
-  },
-  {
-    "name": "sei-graphs-lesson",
-    "duration": "1:0"
+    "duration": "3:00"
   },
   {
     "name": "sql-intro-lesson",
-    "duration": "2:30"
+    "duration": "3:30"
   },
   {
     "name": "sql-intro-exercise",
-    "duration": "2:45"
-  },
-  {
-    "name": "sei-sets-lesson",
-    "duration": "0:15"
-  },
-  {
-    "name": "sei-sets-lesson",
-    "duration": "1:0"
+    "duration": "3:00"
   },
   {
     "name": "django-views-and-templates-lesson",
-    "duration": "2:30"
+    "duration": "3:30"
   },
   {
     "name": "django-models-lesson",
@@ -452,28 +451,8 @@
     "duration": "0:15"
   },
   {
-    "name": "sei-distribution-sort-lesson",
-    "duration": "1:0"
-  },
-  {
-    "name": "sei-distribution-sort-lesson",
-    "duration": "2:30"
-  },
-  {
-    "name": "django-debugging-exercise",
-    "duration": "2:45"
-  },
-  {
-    "name": "django-fullstack-exercise",
-    "duration": "0:15"
-  },
-  {
-    "name": "django-fullstack-exercise",
-    "duration": "1:0"
-  },
-  {
     "name": "django-rest-framework-lesson",
-    "duration": "2:30"
+    "duration": "3:30"
   },
   {
     "name": "django-auth-lesson",
@@ -489,35 +468,11 @@
   },
   {
     "name": "django-team-exercise",
-    "duration": "2:30"
-  },
-  {
-    "name": "django-team-exercise",
-    "duration": "2:45"
-  },
-  {
-    "name": "django-team-exercise",
-    "duration": "0:15"
-  },
-  {
-    "name": "sei-interview-workshop",
-    "duration": "2:30"
-  },
-  {
-    "name": "sei-interview-workshop",
-    "duration": "2:45"
-  },
-  {
-    "name": "sei-divide-conquer-sorting-algorithms-lesson",
-    "duration": "0:15"
-  },
-  {
-    "name": "sei-divide-conquer-sorting-algorithms-lesson",
-    "duration": "1:0"
+    "duration": "5:30"
   },
   {
     "name": "project-4",
-    "duration": "56:00"
+    "duration": "45:30"
   },
   {
     "name": "project-4-presentations",

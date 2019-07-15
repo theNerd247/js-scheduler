@@ -17,12 +17,6 @@
           "duration": "01:00"
         }
       },
-      { "type": "add", "after": "express-donut-shop-exercise",
-        "lesson": {
-          "name": "homework-review",
-          "duration": "01:00"
-        }
-      },
       { "type": "duration", "duration": "24:30", "name": "project-1"},
       { "type": "duration", "duration": "31:00", "name": "project-2"}
     ],

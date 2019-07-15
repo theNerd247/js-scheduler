@@ -8,3 +8,6 @@ all: $(icss)
 
 %.ics: %.json ./template.json ../src/parseSchedule.js
 	node ../src/parseSchedule.js ical $< > $@
+
+clean: 
+	rm $(icss)
