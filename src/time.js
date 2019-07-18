@@ -26,6 +26,14 @@ const saturday   = 6*day
 
 const timeAsDate = (t) => new Date(t)
 
+const isSameDay = (t1, t2) =>
+  withConst(timeAsDate(t1))(d1 =>
+  withConst(timeAsDate(t2))(d2 =>
+    d1.getUTCFullYear() === d2.getUTCFullYear()
+    && d1.getUTCMonth() === d2.getUTCMonth()
+    && d1.getUTCDate() === d2.getUTCDate()
+  ))
+
 const timeAsLocaleDate = (t) => 
   withConst(new Date(t))(d => (
     d.setTime(d.getTime() + d.getTimezoneOffset()*minute),
@@ -104,7 +112,6 @@ const fromTimeStr = (s) =>
     : fromHourStr(ts[0])+fromMinuteStr(ts[1])
   )
 
-
 module.exports = {
   time,
   day,
@@ -130,4 +137,6 @@ module.exports = {
   friday,
   saturday,
   fromTimeStr,
+  isAfterHours,
+  isSameDay
 }

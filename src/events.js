@@ -1,5 +1,5 @@
 const { trace, compose, asConst, lessThan, withConst } = require('./util.js')
-const { fix, repeat, constGen, takeWhile, skipIf } = require('./generator.js')
+const { merge, isDone, andThen, fix, repeat, constGen, takeWhile, skipIf } = require('./generator.js')
 const { timeOfDay } = require('./time.js')
 
 const makeEvent = (eventData) => (t = 0) =>
@@ -67,6 +67,15 @@ const skip = (times, events) =>
 
 const filterByEventName = (n) => skipIf(e => name(e) === n)
 
+const mergeEventTimes = (e1, e2) =>
+  ({ eventData: eventData(e1),
+     start: Math.min(startTime(e1), startTime(e2)),
+     end:   Math.max(endTime(e1), endTime(e2))
+  })
+
+const mergeEvents = (p) =>
+  merge(p, mergeEventTimes)
+
 module.exports = {
   makeEvent,
   endTime,
@@ -85,4 +94,6 @@ module.exports = {
   skipWhenOn,
   skip,
   filterByEventName,
+  mergeEventTimes,
+  mergeEvents
 }

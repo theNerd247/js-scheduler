@@ -1,4 +1,4 @@
-const { compose, withConst, trace } = require('./util.js');
+const { compose, asConst, fixed, withConst, trace } = require('./util.js');
 const LL = require('./linkedList.js');
 
 const isDone = (x) => x == null || x == undefined
@@ -191,6 +191,19 @@ const foldGen = (f) => (g) =>
     isDone(v) ? null : f(v, r)
   ))
 
+const mergeF = (p, m, g) => (f) => (last) =>
+  withConst(peek(g))(x =>
+    isDone(x) ? null 
+    : isDone(last) ? f()(next(g))
+    : p(last, x) ? f()(m(last, next(g)))
+    : last
+  )
+
+const merge = (p, m) => (g) => 
+  fix(_ =>
+    fixed(mergeF(p, m, peeked(g)))(null)
+  )()
+
 module.exports = {
   andThen,
   bind,
@@ -223,5 +236,6 @@ module.exports = {
   isDone,
   foldGen,
   onLast,
-  filter
+  filter,
+  merge
 }
