@@ -1,4 +1,4 @@
-const { withConst, trace } = require('./util.js');
+const { compose, withConst, trace } = require('./util.js');
 const LL = require('./linkedList.js');
 
 const isDone = (x) => x == null || x == undefined
@@ -142,6 +142,8 @@ const skipIf = (p) => function*(g) {
   }
 }
 
+const filter = (p) => skipIf(compose(p, r => !r))
+
 const passThrough = (f) => function*(g) {
   for(let x of g) {
     f(x);
@@ -220,5 +222,6 @@ module.exports = {
   fixM,
   isDone,
   foldGen,
-  onLast
+  onLast,
+  filter
 }

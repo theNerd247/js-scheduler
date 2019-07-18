@@ -3,8 +3,6 @@ const sequencer = require('./sequencer.js')
 const { importJSONFile, throwErr, trace, mapWith, withConst, compose } = require('./util.js')
 const { skip } = require('./events.js')
 const { time, fromTimeStr } = require('./time.js')
-const { eventsToMarkdownTable } = require('./eventsToMarkdown.js')
-const { toICal } = require('./ical.js')
 
 const makePlannedEvent = ({period, name, duration, start}) => {
   switch(period) {
@@ -44,19 +42,6 @@ const parsePlannedEvents = mapWith(parsePlannedEvent)
 const parseApplyOverlays = mapWith(parseApplyOverlay)
 const parseSequences = mapWith(parseSequence)
 
-const outputType = () => process.argv[2]
-
-const configFilePath = () => process.argv[3]
-
-const configFileName = () => configFilePath().replace(/.json/, '')
-
-const makeOutput =
-  withConst(outputType())(type =>
-    type.match(/markdown|md/i) ?  eventsToMarkdownTable
-    : type.match(/ical|calendar|ics/i) ?  toICal(configFileName())
-    : throwErr(`invalid output type ${type}`)
-  )
-
 const applyOverlays = 
   compose(
     parseApplyOverlays,
@@ -76,7 +61,16 @@ const generateSchedule = ({template, overlays, startDate, endDate, plannedEvents
     parseSequences,
     applyOverlays(overlays),
     makeSchedule(startDate, endDate, plannedEvents),
-    makeOutput
   ))
 
-importJSONFile(configFilePath()).then(generateSchedule)
+const generateScheduleFromJSONFile = 
+  compose(
+    importJSONFile,
+    p => p.then(generateSchedule)
+  )
+
+module.exports = {
+  generateSchedule,
+  generateScheduleFromJSONFile
+}
+

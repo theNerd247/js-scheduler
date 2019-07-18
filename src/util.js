@@ -53,6 +53,8 @@ const lessThan = (b) => (a) => a < b
 
 const curry = (f) => (a) => (b) => f(a,b)
 
+const uncurry = (f) => (a,b) => f(a)(b)
+
 const update = (f) => (x) => (f(x), x)
 
 const updateAt = (k, v) => update(xs => xs[k] = v)
@@ -66,6 +68,14 @@ const updateFieldAt = (k, v) => (i) =>
   )
 
 const updateSplice = (...args) => update(xs => xs.splice(...args))
+
+const semiConcat = (f) => (xs) => xs.reduce(uncurry(f))
+
+const mconcat = (f, mempty) => (xs) => xs.length < 1 ? mempty : semiConcat(f)(xs)
+
+const and = (a) => (b) => a && b
+
+const or = (a) => (b) => a || b
 
 module.exports = {
   trace,
@@ -90,5 +100,9 @@ module.exports = {
   update,
   updateAt,
   updateFieldAt,
-  updateSplice
+  updateSplice,
+  semiConcat,
+  mconcat,
+  and,
+  or
 }
