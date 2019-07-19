@@ -2,6 +2,9 @@
   "startDate": "2019-07-22T09:00:00.0Z",
   "endDate":   "2019-10-14T17:00:00.0Z",
   "overlays": [ 
+    { "type": "duration", "name": "cli-intro-lesson", "duration": "02:00"},
+    { "type": "duration", "name": "git-intro-lesson", "duration": "03:30"},
+    { "type": "duration", "name": "git-intro-exercise", "duration": "01:00"},
     { "type": "duration", "name": "html-staticsite-exercise", "duration": "01:30" },
     { "type": "duration", "name": "project-1", "duration": "24:30"},
     { "type": "replace", "name": "js-debugging-lab", "with": "js-functions-exercise"},
