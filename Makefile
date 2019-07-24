@@ -1,13 +1,13 @@
 bin=./bin
+src=./src
 srcs=$(wildcard sei*.json)
-icss=$(srcs:.json=.ics)
-
-.PHONY: clean
+icss=$(addprefix $(bin)/, $(srcs:.json=.ics))
 
 all: $(icss)
 
-%.ics: %.json ./template.json ../src/parseSchedule.js
-	node ../src/parseSchedule.js ical $< > $@
+$(icss): $(bin)/%.ics: %.json ./template.json $(src)/parseSchedule.js
+	node $(src)/parseSchedule.js ical $< > $@
 
+.PHONY: clean
 clean: 
 	rm $(icss)
