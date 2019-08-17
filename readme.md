@@ -1,51 +1,13 @@
-# Course Schedule
+# JS Scheduler
 
 # Overview
 
-TLDR; The scheduler program has been written to make planning the course easier
-in the following sense:
+TLDR; The scheduler program has been written to make planning an educational
+course easier in the following sense:
 
-  * enforcing business rules (course must be 12 weeks, outcomes are certain
-    times, etc)
-  * dependencies between lessons are respected
-  * changes between cohorts are tracked
+  * changes between semesters are tracked
   * making minor schedule changes are light weight
-
-## Why We Need the Scheduler
-
-Historically the curriculum here at GA-ATL was managed using a Google Calendar
-with links to seperate repositories where each repository had the contents
-for a single lesson/assignment. There were several maintanence issues regarding
-this method of managing the course material:
-
-  1. No cross cohort communication. When changes were made for one cohort there
-     was no way to propigate changes to future or on-going cohorts. Inevitably
-     bug fixes and material updates would occur and future cohorts never got
-     those changes and so we ended up repeating our mistakes
-  1. No valid way to track what changes were made in between cohorts. This
-     resulted in situations where management could not receive the answer to
-     the question "What did you differently since the previous class?"
-     Therefore as instructors we were told to not change anything in the
-     material - even if it was absolutely incorrect information the was being
-     delivered to the students.
-  1. No dependency management of the lessons. Google calendar does no enforcing
-     of the order in which events occur. Therefore when we had a 2 week holiday
-     in the middle of the unit and decided to switch lessons around. In short
-     accidentally taught a lesson after the break that should have been taught
-     before the break which resulted in many students nearly failing the
-     project 2 and a lot of angry people.
-  1. No flexibility in tweaking the schedule. Google calendar does not make
-     moving weeks of a schedule forward.
-  1. No easy way to maintain content dependencies. Because the material was
-     managed across multiple repositories we had no way of "linking" these
-     repos together except for manually copying and pasting URLs in text files.
-     If a link was broken that material was likely lost forever.
-Over a small period of time we solved this problem by making the following
-changes to our system:
-
-  1. created a single repository where all content for the course is kept
-  1. created this Unix style scheduling application to help generate course
-     schedules.
+  * dependencies between lessons are respected (future feature)
 
 # Schedule Creation Process
 
