@@ -69,7 +69,7 @@ time is done by the scheduler application.
 An augmented form of the ISO standard time format is used for time strings.
 The following are the formats for the strings allowed:
 
-  <weekday?>:<hour>:minute | <year>-<month>-<day>T<hour>-<minute>:00.0Z
+    <weekday?>:<hour>:minute | <year>-<month>-<day>T<hour>-<minute>:00.0Z
 Where `<weekday>` is one of: `sunday`, `monday`, ... `saturday`. Note: `start`
 for for `once` planned events use ONLY the standard ISO time format (the second
 one noted above).
