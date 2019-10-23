@@ -1,17 +1,23 @@
 bin=./bin
 src=./src
-srcs=$(wildcard sei*.json)
-icss=$(addprefix $(bin)/, $(srcs:.json=.ics))
-mds=$(addprefix $(bin)/, $(srcs:.json=.md))
+jsondir=./schedules
+srcs=$(wildcard $(jsondir)/*.json)
+bases=$(basename $(notdir $(srcs)))
+# icss=$(addprefix $(bin)/, $(addsuffix .json, $(bases))) 
+mds=$(addprefix $(bin)/, $(addsuffix .md, $(bases))) 
 
 all: $(icss) $(mds)
 
-$(icss): $(bin)/%.ics: %.json ./template.json $(src)/makeSchedule.js
-	node $(src)/makeSchedule.js ical $< > $@
+# $(icss): $(bin)/%.ics: %.json ./template.json $(src)/makeSchedule.js
+# 	node $(src)/makeSchedule.js ical $< > $@
+#
 
-$(mds): $(bin)/%.md: %.json ./template.json $(src)/makeSchedule.js
+$(bin): 
+	mkdir -p bin
+
+$(mds): $(bin)/%.md: $(bin) $(jsondir)/%.json ./template.json $(src)/makeSchedule.js
 	node $(src)/makeSchedule.js md $< > $@
 
 .PHONY: clean
 clean: 
-	rm $(icss)
+	rm -r $(bin)
